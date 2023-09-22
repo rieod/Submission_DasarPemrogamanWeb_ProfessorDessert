@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -13,22 +14,23 @@
             <a href="#"><img src="./assets/icon/logo.png"></a>
         </div>
         <nav>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
             <ul class="navbar-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class="drpdwn-lang">
-                    <button class="dropbtn">
-                        <i class="material-icons">language</i>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">INA</a>
-                        <a href="#">ENG</a>
-                    </div>
-                </li>
             </ul>
+            <div class="drpdwn-lang">
+                <button class="dropbtn">
+                    <i class="material-icons">language</i>
+                    <i class="material-icons">arrow_drop_down</i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">INA</a>
+                    <a href="#">ENG</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -46,5 +48,14 @@
               <img src="./assets/images/sponge-cake-with-strawberries-top.jpg" />
             </div>
     </main>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.querySelector("nav ul");
+        menuToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+    
 </body>
 </html>
