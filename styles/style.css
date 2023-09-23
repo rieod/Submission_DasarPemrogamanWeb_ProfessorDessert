@@ -44,6 +44,7 @@ header {
     align-items: start;
     background-color: #fff;
     margin: 20px 64px;
+    position: sticky;
 }
 
 .header-logo img {
@@ -139,33 +140,31 @@ nav ul li a:hover{
     display: block;
   }
 
-main .content {
+main #intro {
     flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
    
-main .content .content-description {
+main #intro .content-description {
     flex: 1 1;
     flex-direction: column;
     margin: 20px 64px;
 }
    
-main .content .content-description .title {
+main #intro .content-description .title {
     font-size: 3.5rem;
     margin-block: 1rem;
     color: #E11383;
-
-    
 }
    
-main .content .content-description p {
+main #intro .content-description p {
     line-height: 1.5rem;
     font-size: 1rem;
 }
    
-main .content .content-description button {
+main #intro .content-description button {
     padding: .8rem 2.5rem;
     margin-block-start: 1rem;
     text-transform: uppercase;
@@ -180,26 +179,182 @@ main .content .content-description button {
     transition: all .15s ease-in;
 }
 
-main .content .content-description button i{
+main #intro .content-description button i{
     color: #fff;
     size: 1rem;
+    vertical-align: middle;
+    margin-right: 10px;
 }
    
-main .content .content-description button:hover {
+main #intro .content-description button:hover{
     border: 3px solid #F5821F;
     color: #E11383;
-    background-color: transparent;
+    background-color: white;
+}
+
+main #intro .content-description button:hover i{
+    color: #E11383;
 }
    
-main .content .content-image {
+main #intro .content-image {
     flex: 1 2;
     display: flex;
 }
    
-main .content .content-image img {
+main #intro .content-image img {
     margin: auto;
     max-width: 100%;
     display: block;
+}
+
+main #menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAD8EA;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+main #menu h1{
+    font-size: 2rem;
+    color: #333;
+}
+
+main #menu .product {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+main #menu .product .product-card{
+    width: 250px;
+    min-height: fit-content;
+    background-color: white;
+    border-radius: 3%;
+    margin-right: 20px;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #menu .product .product-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+main #menu .product .product-card .product-spec{
+    margin: 0 5%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main #menu .product .product-card .product-image img{
+    border-radius: 8% 8% 0 0;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+main #menu .product .product-card .product-description .product-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+main #menu .product .product-card .product-description p{
+    font-size: .8rem;
+
+}
+
+main #menu .product .product-card .product-rate{
+    flex-grow: 1;
+}
+
+main #menu .product .product-card .product-rate a{ 
+    text-decoration: none;
+    color: #777;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .9rem;
+}
+
+main #menu .product .product-card .product-rate a i{
+    color: #F5821F;
+    margin-right: 5px;
+    border-radius: 1%;
+}
+
+main #store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 2%;
+}
+
+main #store h1{
+    font-size: 2rem;
+    color: #333;
+}
+
+main #store .shop {
+    display: flex;
+    flex-direction: row;
+}
+
+main #store .shop .shop-card{
+    width: 560px;
+    max-height: 300px;
+    background-color: white;
+    border: 3px solid #7d7d7d;
+    border-radius: 5px;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+}
+main #store .shop .shop-card .shop-spec{
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    margin: -5% 2%;
+}
+
+main #store .shop .shop-card .shop-image img{
+    align-items: center;
+    max-height: 250px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+main #store .shop .shop-card .shop-description .shop-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    
+}
+main #store .shop .shop-card .shop-description .shop-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main #store .shop .shop-card .shop-description .shop-address{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+main #store .shop .shop-card .shop-description .shop-address p{
+    margin: -2% 0;
+}
+
+main #store .shop .shop-card .shop-description p{
+    font-size: .8rem;
 }
 
 @media (max-width: 768px) {
@@ -244,20 +399,20 @@ main .content .content-image img {
         font-weight: bold;
     }
 
-    main .content {
+    main #intro {
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    main .content .content-image img {
+    main #intro .content-image img {
         margin: auto;
         max-width: 100%;
         display: block;
     }
 
-    main .content .content-description {
+    main #intro .content-description {
         flex: 1;
         flex-direction: column;
         margin: 10px 75px;
