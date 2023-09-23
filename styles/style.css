@@ -257,6 +257,9 @@ main #menu .product .product-card .product-image img{
     height: 150px;
     object-fit: cover;
 }
+main #menu .product .product-card .product-description{
+    flex-grow: 3;   
+}
 
 main #menu .product .product-card .product-description .product-name{
     font-size: 1.2rem;
@@ -271,6 +274,7 @@ main #menu .product .product-card .product-description p{
 
 main #menu .product .product-card .product-rate{
     flex-grow: 1;
+    align-items: flex-end;
 }
 
 main #menu .product .product-card .product-rate a{ 
@@ -309,7 +313,7 @@ main #store .shop {
 
 main #store .shop .shop-card{
     width: 560px;
-    max-height: 300px;
+    max-height: 250px;
     background-color: white;
     border: 3px solid #7d7d7d;
     border-radius: 5px;
@@ -331,9 +335,18 @@ main #store .shop .shop-card .shop-image img{
     object-fit: cover;
 }
 
+main #store .shop .shop-card .shop-description {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+
 main #store .shop .shop-card .shop-description .shop-name{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: -3%;
     
     
 }
@@ -343,18 +356,33 @@ main #store .shop .shop-card .shop-description .shop-time{
     align-items: center;
 }
 
+main #store .shop .shop-card .shop-description .shop-time i{
+    margin-right: 3%;
+}
+
 main #store .shop .shop-card .shop-description .shop-address{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
+main #store .shop .shop-card .shop-description .shop-address i{
+    margin-right: 3%;
+}
+
+
 main #store .shop .shop-card .shop-description .shop-address p{
-    margin: -2% 0;
+    margin-top: -2%;
+}   
+
+main #store .shop .shop-card .shop-description .shop-address p a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #E11383;
 }
 
 main #store .shop .shop-card .shop-description p{
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 @media (max-width: 768px) {
