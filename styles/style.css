@@ -294,12 +294,23 @@ main #menu .product .product-card .product-rate a i{
 }
 
 main #store{
-    display: flex;
+    display: flex;  
     flex-direction: column;
     align-items: center;
     padding: 20px;
     margin-bottom: 2%;
 }
+
+main #store .row-1{
+    display: flex;
+    flex-direction: row;
+}
+
+main #store .column-1{
+    display: flex;
+    flex-direction: column;
+}
+
 
 main #store h1{
     font-size: 2rem;
@@ -312,14 +323,17 @@ main #store .shop {
 }
 
 main #store .shop .shop-card{
+    display: flex;
+    flex-direction: row;
+    
+    padding: 2%;
+    margin: 0 0 5% 5%;
+
     width: 560px;
     max-height: 250px;
     background-color: white;
     border: 3px solid #7d7d7d;
     border-radius: 5px;
-    padding: 2%;
-    display: flex;
-    flex-direction: row;
 }
 main #store .shop .shop-card .shop-spec{
     color: #333;
