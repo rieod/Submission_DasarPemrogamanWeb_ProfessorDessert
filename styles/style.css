@@ -397,91 +397,6 @@ main #store .shop .shop-card .shop-spec .shop-description .shop-address a:hover{
     color: #F5821F;
  }
 
-footer{
-    padding: 20px 64px 5px 64px;
-    background-color: #333;
-    color: #fff;
-}
-
-footer #ftr-main{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    
-}
-
-footer .profile{
-    max-width: 500px;
-    margin-right: 100px;
-}
-
-footer .profile .profile-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-footer .profile .profile-title img{
-    max-height: 48px;
-    margin-right: 10px;
-}
-
-footer .profile .profile-title p{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-footer .profile .profile-address{
-    margin-top: -1%;
-}
-
-
-footer .profile .socmed{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10%;
-}
-
-footer .socmed a img{
-    max-height: 32px;
-    margin-right: 10px;
-}
-
-footer .about{
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-}
-
-footer .about p{
-    font-weight: bold;
-}
-
-footer .help-guide{
-    display: flex;
-    flex-direction: column;
-}
-
-footer .help-guide p{
-    font-weight: bold;
-}
-
-footer a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: light;
-}
-
-footer hr { 
-    margin-top: 2%;
-}
-
-footer .copyright{
-    text-align: center;
-    font-weight: lighter;
-    font-size: 12px;
-}
-
 main #contact-person{
     background-color: #FAD8EA;
     padding: 20px 64px;
@@ -508,12 +423,6 @@ main #contact-person .cp-content{
 main #contact-person .cp-content .send-msg{
     margin-right: 50px;
     text-align: left;
-}
-
-main #contact-person .cp-content .send-msg hr{
-    border: 2px solid white;
-    border-radius: 5px;
-    width: 200px;
 }
 
 main #contact-person .cp-content .send-msg form label{
@@ -607,6 +516,91 @@ main #contact-person .cp-content aside .user-socmed{
 main #contact-person .cp-content aside .user-socmed img{
     max-width: 32px;
     margin-right: 20px;
+}
+
+footer{
+    padding: 20px 64px 5px 64px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer #ftr-main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+
+footer .profile{
+    max-width: 500px;
+    margin-right: 100px;
+}
+
+footer .profile .profile-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .profile .profile-title img{
+    max-height: 48px;
+    margin-right: 10px;
+}
+
+footer .profile .profile-title p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer .profile .profile-address{
+    margin-top: -1%;
+}
+
+
+footer .profile .socmed{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+footer .socmed a img{
+    max-height: 32px;
+    margin-right: 10px;
+}
+
+footer .about{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+footer .about p{
+    font-weight: bold;
+}
+
+footer .help-guide{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .help-guide p{
+    font-weight: bold;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: light;
+}
+
+footer hr { 
+    margin-top: 2%;
+}
+
+footer .copyright{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
 }
 
 @media (max-width: 768px) {
@@ -707,4 +701,27 @@ main #contact-person .cp-content aside .user-socmed img{
         max-height: 150px;
         width: 225px;
     }
+
+    main #contact-person .cp-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0 0 5% 0;
+    }
+
+    main #contact-person .cp-content .send-msg{
+        margin-right: 0;
+    }
+
+    main #contact-person .cp-content aside h3{
+        min-width: 200px;
+        font-size: 16px;
+    }
+    
+    footer #ftr-main{
+        flex-direction: column;
+    }
+    
+
 }
