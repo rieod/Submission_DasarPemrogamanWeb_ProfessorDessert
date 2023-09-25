@@ -51,6 +51,7 @@
 
         <article id="menu">
             <h1>New Arrivals</h1>
+            <hr>
                 <div class="product">
                     <section class="product-card">
                         <div class="product-image">
@@ -112,7 +113,7 @@
         </article>
 
         <article id="store">
-            <h1>Store</h1>
+            <h1>Store</h1><hr>
             <div class="column-1">
                 <div class="row-1">
                     <section class="shop">
@@ -206,37 +207,54 @@
         </article>
 
         <article id="contact-person">
-            <section class="send-msg">
-                <h1>Send Message</h1>
-                
-            </section>
-
-            <aside>
-                <img src="./assets/icon/user-profile.jpg">
-                <h3>Sari Wahyuningsih</h3>
-                <hr>
-                <p>UI/UX Designer</p>
-                <table>
-                    <tr>
-                        <th>Address</th>
-                        <td>Karanganyar, Indonesia</td>
-                    </tr>
-                    <tr>
-                        <th>Education</th>
-                        <td>Informatics Engineering</td>
-                    </tr>
-                    <tr>
-                        <th>Hobbies</th>
-                        <td>Drawing and listening to music</td>
-                    </tr>
-                </table>
-                <div class="user-socmed">
-                    <a href="mailto:sariwahyuningsih22@gmail.com" target="_blank"><img src="./assets/icon/message-pink.png"></a>
-                    <a href="https://www.linkedin.com/in/sariwahyu22/" target="_blank"><img src="./assets/icon/linkedin-pink.png"></a>
-                    <a href="https://sites.google.com/view/sariwahyuningsih/" target="_blank"><img src="./assets/icon/site-pink.png"></a>
-                </div>
-            </aside>
-
+            <h1>Contact Us</h1>
+                <p>Any question or remarks? Just write us a message!</p>
+            <div class="cp-content">
+                <section class="send-msg">
+                    <form action="#">
+                        <label for="uname">Name:</label><br>
+                        <input type="text" id="uname" name="uname"><br>
+                        <label for="uemail">Email:</label><br>
+                        <input type="text" id="uemail" name="uemail"><br>
+                        <label for="phnnumb">Phone Number:</label><br>
+                        <input type="number" id="phnnumb" name="phnnumb"><br>
+                        <label for="msg">Message:</label><br>
+                        <textarea type="text" id="msg" name="msg" rows="10" cols="80"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                      </form> 
+                    
+                </section>
+    
+                <aside>
+                    <h2>Profile Information</h2>
+                    <img src="./assets/icon/user-profile.jpg">
+                    <h3>Sari Wahyuningsih</h3>
+                    <hr>
+                    <table>
+                        <tr>
+                            <th>Role</th>
+                            <td><ul>
+                                <li>UI Designer</li>
+                                <li>UX Designer</li>
+                                <li>Frontend Developer</li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>Karanganyar, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Education</th>
+                            <td>Informatics Engineering</td>
+                        </tr>
+                    </table>
+                    <div class="user-socmed">
+                        <a href="mailto:sariwahyuningsih22@gmail.com" target="_blank"><img src="./assets/icon/message-pink.png"></a>
+                        <a href="https://www.linkedin.com/in/sariwahyu22/" target="_blank"><img src="./assets/icon/linkedin-pink.png"></a>
+                        <a href="https://sites.google.com/view/sariwahyuningsih/" target="_blank"><img src="./assets/icon/site-pink.png"></a>
+                    </div>
+                </aside>
+            </div>
         </article>
     </main>
 

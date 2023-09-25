@@ -197,6 +197,14 @@ main #menu h1{
     color: #333;
 }
 
+main #menu hr{
+    border: 5px solid #E11383;
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    min-width: 100px;
+}
+
 main #menu .product {
     display: flex;
     flex-direction: row;
@@ -286,6 +294,14 @@ main #store .column-1{
 main #store h1{
     font-size: 2rem;
     color: #333;
+}
+
+main #store hr{
+    border: 5px solid #F5821F;
+    border-radius: 5px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    min-width: 100px;
 }
 
 main #store .shop {
@@ -456,7 +472,7 @@ footer a{
     font-weight: light;
 }
 
-hr {
+footer hr { 
     margin-top: 2%;
 }
 
@@ -466,29 +482,64 @@ footer .copyright{
     font-size: 12px;
 }
 
-#contact-person{
-    display: flex;
-    flex-direction: row;
+main #contact-person{
     background-color: #FAD8EA;
-    align-content: center;
     padding: 20px 64px;
-}
-
-.send-msg h1{
-    background-color: #E11383;
-    color: #fff;
-    min-width: 200px;
-    border-radius: 20px;
     text-align: center;
 }
 
-.send-msg hr{
+main #contact-person h1{
+    font-size: 2rem;
+    color: #333;
+}
+
+main #contact-person p{
+    color: #333;
+    margin-top: -35px;
+    margin-bottom: 35px;
+}
+
+main #contact-person .cp-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main #contact-person .cp-content .send-msg{
+    margin-right: 50px;
+    text-align: left;
+}
+
+main #contact-person .cp-content .send-msg hr{
     border: 2px solid white;
     border-radius: 5px;
     width: 200px;
 }
 
-aside{
+main #contact-person .cp-content .send-msg form label{
+    font-weight: 700;
+    color: #505050;
+}
+
+main #contact-person .cp-content form input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 8px; 
+    font-size: 16px;
+    padding: 5px;
+}
+
+main #contact-person .cp-content form input[type=submit]{
+    color: #fff;
+    background-color: #E11383;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0;
+}
+
+main #contact-person .cp-content aside{
     padding: 20px;
     display: flex;
     flex: 1;
@@ -500,7 +551,7 @@ aside{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-aside h3{
+main #contact-person .cp-content aside h3{
     font-weight: bold;
     background-color: #00b1ac;
     color: #333;
@@ -510,49 +561,50 @@ aside h3{
     align-items: center;
 }
 
-aside p{
-    margin-top: -2%;
-    color: #111;
-    font-weight: 600;
-}
 
-aside img{
+
+main #contact-person .cp-content aside img{
     max-width: 200px;
 }
 
-aside hr{
-    border: 2px solid salmon;
+main #contact-person aside hr{
+    border: 2px solid #FF8081;
     border-radius: 5px;
     width: 200px;
     margin-top: -3%;
 }
-aside table{
+
+main #contact-person .cp-content aside table{
     margin-bottom: 20px;
 }
 
-aside table, th, td{
+main #contact-person .cp-content aside table, th, td{
     border: 2px solid #00b1ac;
     border-collapse: collapse;
     padding: 5px;
     text-align: center;
 }
 
-aside table th{
+main #contact-person .cp-content aside table tr td ul li{
+    list-style : none;
+}
+
+main #contact-person .cp-content aside table th{
     background-color: #00b1ac;
     color: #fff;
 }
 
-aside table td a{
+main #contact-person .cp-content aside table td a{
     text-decoration: none;
     color: #333;
 }
 
-aside .user-socmed{
+main #contact-person .cp-content aside .user-socmed{
     display: flex;
     flex-direction: row;
 }
 
-aside .user-socmed img{
+main #contact-person .cp-content aside .user-socmed img{
     max-width: 32px;
     margin-right: 20px;
 }
